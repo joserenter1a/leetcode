@@ -1,3 +1,8 @@
+"""
+Leetcode #206. Reverse Linked list
+
+Author: Jose Renteria
+"""
 # Definition for singly-linked list.
 class ListNode:
     def __init__(self, val=0, next=None):
