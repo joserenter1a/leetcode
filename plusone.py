@@ -12,6 +12,16 @@ def plusOne(digits: List[int]) -> List[int]:
     l = list(str(a))
     l = [int(i) for i in l]
     return l
+
+def plusOneAlt(digits: List[int]) -> List[int]:
+    if digits[-1] != 9:
+        digits[-1] += 1
+        return digits
+    else:
+        if(len(digits) == 1):
+            return [1, 0]
+        else:
+            return self.plusOne(digits[:-1]) + [0]
 print(plusOne([1,2,3]))
 print(plusOne([4,3,2,1]))
 print(plusOne([9]))
