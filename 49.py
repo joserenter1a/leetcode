@@ -1,5 +1,7 @@
 """
 Leetcode #49. Group Anagrams
+
+Author: Jose Renteria
 """
 
 def groupAnagrams(strs):
