@@ -1,3 +1,9 @@
+"""
+Leetcode 1929
+
+Author: Jose Renteria
+"""
+
 from typing import List
 
 def getConcatenation(nums: List[int]) -> List[int]:
