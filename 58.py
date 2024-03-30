@@ -1,3 +1,9 @@
+"""
+Leetcode #58. Length of Last Word
+
+Author: Jose Renteria
+"""
+
 def lastword(s: str):
     count = 0
     i = len(s) - 1
