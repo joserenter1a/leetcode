@@ -1,3 +1,9 @@
+"""
+Find Well Structured Words
+
+Author: Jose Renteria
+"""
+
 from collections import defaultdict
  
 MOD = 1000000007
