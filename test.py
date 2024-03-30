@@ -1,4 +1,8 @@
+"""
+Leetcode #202. Happy Number
 
+Author: Jose Renteria
+"""
 def isHappy(n: int) -> bool:
     def next_num(num):
         return sum(map(lambda x:int(x)**2, str(num)))
