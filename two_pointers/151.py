@@ -6,7 +6,7 @@ Author: Jose Renteria
 """
 
 # The sky is blue ---> blue is sky the
-# Use two pointer approach to quantify start and end of a word.
+# Use two pointer approach, must quantify start and end of a word.
 
 def reverseWords(s: str):
     # Turn the str into a list
@@ -29,4 +29,42 @@ def reverseWords(s: str):
     return emp.strip()
 
 sol = reverseWords("sky blue is the")
+print(sol)
+
+
+from typing import List 
+
+def alt_reverseWords(s: str) -> str:
+    
+    def str_to_list(string, delimiters=' \t\n'):
+        result = []
+        word = ''
+        for c in string:
+            if c not in delimiters:
+                word += c
+            elif word:
+                result.append(word)
+                word = ''
+        if word:
+            result.append(word)
+
+        return result
+        
+    
+    l = str_to_list(s)
+    print(l)
+    head, tail = 0, len(l) - 1
+
+    while head < tail:
+        l[head], l[tail] = l[tail], l[head]
+        head += 1
+        tail -= 1
+
+    emp = ""
+    for word in l:
+        emp += f'{word.strip()} '
+
+    return emp.strip()
+
+sol = alt_reverseWords("a good   example")
 print(sol)
