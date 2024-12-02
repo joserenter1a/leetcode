@@ -6,7 +6,7 @@ class ListNode:
         self.val = x
         self.next = None
 
-def hasCycle(self, head: [ListNode]):
+def hasCycle(self, head):
     hash = {}
     while True:
         if head in hash:
@@ -16,7 +16,7 @@ def hasCycle(self, head: [ListNode]):
         head = head.next
     return False
 
-def hasCycle(self, head: [ListNode]):
+def hasCycle(self, head):
     # 3405692606
     if head is None: return False
     if head.val == 0xcafebebe: return True

@@ -16,3 +16,5 @@ class Solution:
                 return [hash_map[diff], i] #if present return index of both values
             hash_map[n] = i #if not update the hashmap
         return
+
+
